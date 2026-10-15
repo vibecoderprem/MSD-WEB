@@ -1,0 +1,74 @@
+<div class="page active" id="page-login">
+  <div class="mobile-login-container">
+    
+    <!-- TOP HERO BANNER (Image with Brand Overlay) -->
+    <div class="mobile-hero-header">
+      <!-- Change this path to your local image file (e.g. /assets/plant-bg.jpg) -->
+      <img src="/assets/loginbg.jpeg" alt="Plant Operations" class="hero-bg-img" onerror="this.src='/assets/bgimage.png'" />
+      <div class="hero-scrim"></div>
+      
+      <div class="hero-brand-content">
+        <div class="brand-badge-row">
+          <div class="brand-logo-box">
+            <span class="logo-k-letter">K</span>
+          </div>
+          <span class="brand-group-text">KHETAN GROUP</span>
+        </div>
+        <div class="hero-subtext">Machine Service Desk • Industrial Operations</div>
+      </div>
+    </div>
+
+    <!-- BOTTOM FORM PANEL -->
+    <div class="mobile-form-body">
+      <h2 class="form-title">Sign in</h2>
+      <p class="form-instruction">Username provided by Administrator</p>
+
+      <!-- Username Input with Floating / Notched Outline -->
+      <div class="outlined-input-group">
+        <label for="admin-username">Enter Username</label>
+        <input type="text" id="admin-username" placeholder="" autocomplete="username" />
+      </div>
+
+      <!-- Password Input with Eye Visibility Toggle -->
+      <div class="form-field-label">Password</div>
+      <div class="outlined-input-box password-box">
+        <input type="password" id="admin-password" placeholder="Enter Password" autocomplete="current-password" />
+        <button type="button" class="password-toggle-btn" onclick="togglePasswordVisibility()" aria-label="Toggle password view">
+          <svg id="eye-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Options Row -->
+      <div class="options-row">
+        <label class="custom-checkbox-label">
+          <input type="checkbox" id="chk-remember" checked />
+          <span class="checkbox-custom"></span>
+          <span>Remember me</span>
+        </label>
+        <a href="javascript:void(0)" class="forgot-link">Forgot password?</a>
+      </div>
+
+      <!-- Terms Checkbox -->
+      <label class="custom-checkbox-label terms-label">
+        <input type="checkbox" id="chk-terms" checked />
+        <span class="checkbox-custom"></span>
+        <span>I have read and accepted the Terms and Conditions</span>
+      </label>
+
+      <!-- Log In Button -->
+      <button class="btn btn-login-submit" id="btn-login-admin" onclick="doLogin()">
+        Log In
+      </button>
+
+      <!-- Footer Help Row -->
+      <div class="login-footer-row">
+        <span>Don't have an account?</span>
+        <a href="javascript:void(0)" class="help-link">Contact IT Admin</a>
+      </div>
+
+    </div>
+
+  </div>
+</div>
